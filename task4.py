@@ -25,7 +25,7 @@ def cut_picture():
         for file in list_file:
                 file_init_path = os.path.join(current_dir, source, file)
                 file_target_path = os.path.join(current_dir, result, file)
-                subprocess.call([current_dir, 'convert ', file_init_path, ' -resize 200 ', file_target_path])
+                subprocess.call(['convert', file_init_path, '-resize', '200', file_target_path])
 
 
 cut_picture()

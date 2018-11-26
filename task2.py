@@ -1,4 +1,7 @@
 import os
 
-abspath = os.path.abspath('Migrations')
-print(abspath)
+
+a = os.path.join(os.path.dirname(__file__), 'Migrations')
+b = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'Migrations')
+print(a)
+print(b)
