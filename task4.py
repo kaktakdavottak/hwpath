@@ -28,5 +28,6 @@ def cut_picture():
                 subprocess.call(['convert', file_init_path, '-resize', '200', file_target_path])
 
 
+
 cut_picture()
 
